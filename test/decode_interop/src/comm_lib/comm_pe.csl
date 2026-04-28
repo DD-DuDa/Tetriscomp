@@ -38,7 +38,7 @@ const trace = @import_module(
      .buffer_size = 100,
    }
 );
-const simprint = @import_module("<simprint>");
+const prt = @import_module("<simprint>", .{ .enable = true });
 
 const reduce_1st_0_recv_queue_id = @get_input_queue(3);
 const reduce_1st_0_send_queue_id = @get_output_queue(3);
@@ -489,6 +489,7 @@ fn init() void {
 }
 
 fn all_reduce_bsz(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16, vector_buf_ptr: [*]f16) void {
+    prt.fmt_with_coords("comm_start:all_reduce_bsz\n", .{});
     vector_buf_dsd_bsz = @set_dsd_base_addr(vector_buf_dsd_bsz, vector_buf_ptr);
     @load_to_dsr(vector_buf_dsr, vector_buf_dsd_bsz);
 
@@ -569,9 +570,11 @@ fn all_reduce_bsz(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16, vector_
     } else {
         @mov16(vector_buf_dsd_bsz, bdcast_recv_bsz);
     }
+    prt.fmt_with_coords("comm_end:all_reduce_bsz\n", .{});
 }
 
 fn all_reduceMax_bsz(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16, vector_buf_ptr: [*]f16) void {
+    prt.fmt_with_coords("comm_start:all_reduceMax_bsz\n", .{});
     vector_buf_dsd_bsz = @set_dsd_base_addr(vector_buf_dsd_bsz, vector_buf_ptr);
     @load_to_dsr(vector_buf_dsr, vector_buf_dsd_bsz);
 
@@ -652,9 +655,11 @@ fn all_reduceMax_bsz(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16, vect
     } else {
         @mov16(vector_buf_dsd_bsz, bdcast_recv_bsz);
     }
+    prt.fmt_with_coords("comm_end:all_reduceMax_bsz\n", .{});
 }
 
 fn all_reduce_bsz_dim(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16, vector_buf_ptr: [*]f16) void {
+    prt.fmt_with_coords("comm_start:all_reduce_bsz_dim\n", .{});
     vector_buf_dsd_bsz_dim = @set_dsd_base_addr(vector_buf_dsd_bsz_dim, vector_buf_ptr);
     @load_to_dsr(vector_buf_dsr, vector_buf_dsd_bsz_dim);
 
@@ -735,9 +740,11 @@ fn all_reduce_bsz_dim(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16, vec
     } else {
         @mov16(vector_buf_dsd_bsz_dim, bdcast_recv_bsz_dim);
     }
+    prt.fmt_with_coords("comm_end:all_reduce_bsz_dim\n", .{});
 }
 
 fn all_reduce_bsz_dim_QKV_fusion(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16, vector_buf_ptr: [*]f16) void {
+    prt.fmt_with_coords("comm_start:ar_qkv\n", .{});
     vector_buf_dsd_bsz_dim_QKV_fusion = @set_dsd_base_addr(vector_buf_dsd_bsz_dim_QKV_fusion, vector_buf_ptr);
     @load_to_dsr(vector_buf_dsr, vector_buf_dsd_bsz_dim_QKV_fusion);
 
@@ -818,9 +825,11 @@ fn all_reduce_bsz_dim_QKV_fusion(pe_id: i16, quotient_pe_id: i16, remainder_pe_i
     } else {
         @mov16(vector_buf_dsd_bsz_dim_QKV_fusion, bdcast_recv_bsz_dim_QKV_fusion);
     }
+    prt.fmt_with_coords("comm_end:ar_qkv\n", .{});
 }
 
 fn all_reduce_bsz_seq_len(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16, vector_buf_ptr: [*]f16) void {
+    prt.fmt_with_coords("comm_start:ar_seqlen\n", .{});
     vector_buf_dsd_bsz_seq_len = @set_dsd_base_addr(vector_buf_dsd_bsz_seq_len, vector_buf_ptr);
     @load_to_dsr(vector_buf_dsr, vector_buf_dsd_bsz_seq_len);
 
@@ -901,9 +910,11 @@ fn all_reduce_bsz_seq_len(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16,
     } else {
         @mov16(vector_buf_dsd_bsz_seq_len, bdcast_recv_bsz_seq_len);
     }
+    prt.fmt_with_coords("comm_end:ar_seqlen\n", .{});
 }
 
 fn all_reduce_bsz_ffn_dim_ZZ_fusion(pe_id: i16, quotient_pe_id: i16, remainder_pe_id: i16, vector_buf_ptr: [*]f16) void {
+    prt.fmt_with_coords("comm_start:ar_zz\n", .{});
     vector_buf_dsd_bsz_ffn_dim_ZZ_fusion = @set_dsd_base_addr(vector_buf_dsd_bsz_ffn_dim_ZZ_fusion, vector_buf_ptr);
     @load_to_dsr(vector_buf_dsr, vector_buf_dsd_bsz_ffn_dim_ZZ_fusion);
 
@@ -984,9 +995,11 @@ fn all_reduce_bsz_ffn_dim_ZZ_fusion(pe_id: i16, quotient_pe_id: i16, remainder_p
     } else {
         @mov16(vector_buf_dsd_bsz_ffn_dim_ZZ_fusion, bdcast_recv_bsz_ffn_dim_ZZ_fusion);
     }
+    prt.fmt_with_coords("comm_end:ar_zz\n", .{});
 }
 
 fn reconfig_allreduce_axis(axis: i16) void {
+    prt.fmt_with_coords("comm_start:reconfig\n", .{});
     if (axis == 0) {
         // Allreduce along X axis
         color_config.reset_routes(reduce_1st_color_0, X_1st_RD_0);
@@ -1004,6 +1017,7 @@ fn reconfig_allreduce_axis(axis: i16) void {
     } else {
         @assert(false);
     }
+    prt.fmt_with_coords("comm_end:reconfig\n", .{});
 }
 
 comptime {
