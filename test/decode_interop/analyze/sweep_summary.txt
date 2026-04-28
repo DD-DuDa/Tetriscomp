@@ -1,0 +1,30 @@
+=== P=32 ===
+ e2e_mean_cycles  comm_mean_cycles  compute_mean_cycles  comm_ratio
+      8139.59375        4703.71875             3435.875    0.577881
+
+Per-region detail written to: ../results/p32/breakdown_p32.csv
+=== P=40 ===
+ e2e_mean_cycles  comm_mean_cycles  compute_mean_cycles  comm_ratio
+        8311.925           4831.05             3480.875    0.581219
+
+Per-region detail written to: ../results/p40/breakdown_p40.csv
+=== P=50 ===
+ e2e_mean_cycles  comm_mean_cycles  compute_mean_cycles  comm_ratio
+         8429.46           4949.02              3480.44     0.58711
+
+Per-region detail written to: ../results/p50/breakdown_p50.csv
+=== P=64 ===
+ e2e_mean_cycles  comm_mean_cycles  compute_mean_cycles  comm_ratio
+      8955.03125         5518.4375           3436.59375    0.616239
+
+Per-region detail written to: ../results/p64/breakdown_p64.csv
+=== P=80 ===
+ e2e_mean_cycles  comm_mean_cycles  compute_mean_cycles  comm_ratio
+        9292.775         5812.1625            3480.6125     0.62545
+
+Per-region detail written to: ../results/p80/breakdown_p80.csv
+=== P=100 ===
+ e2e_mean_cycles  comm_mean_cycles  compute_mean_cycles  comm_ratio
+         9654.74           6174.18              3480.56    0.639497
+
+Per-region detail written to: ../results/p100/breakdown_p100.csv
