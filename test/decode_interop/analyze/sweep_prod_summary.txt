@@ -1,0 +1,20 @@
+=== prod P=40 ===
+ e2e_mean_cycles  comm_mean_cycles  reduce_mean_cycles  bcast_mean_cycles  compute_mean_cycles  comm_ratio  bcast_ratio
+        10489.35          6246.025            3794.975            2451.05             4243.325    0.595463      0.23367
+
+Per-region detail written to: ../results/prod_p40/breakdown_prod_p40.csv
+=== prod P=60 ===
+ e2e_mean_cycles  comm_mean_cycles  reduce_mean_cycles  bcast_mean_cycles  compute_mean_cycles  comm_ratio  bcast_ratio
+        10626.35            6384.8         3764.516667        2620.283333              4241.55    0.600846     0.246584
+
+Per-region detail written to: ../results/prod_p60/breakdown_prod_p60.csv
+=== prod P=80 ===
+ e2e_mean_cycles  comm_mean_cycles  reduce_mean_cycles  bcast_mean_cycles  compute_mean_cycles  comm_ratio  bcast_ratio
+      11595.8375         7352.9625            3785.875          3567.0875             4242.875    0.634104     0.307618
+
+Per-region detail written to: ../results/prod_p80/breakdown_prod_p80.csv
+=== prod P=100 ===
+ e2e_mean_cycles  comm_mean_cycles  reduce_mean_cycles  bcast_mean_cycles  compute_mean_cycles  comm_ratio  bcast_ratio
+        11699.33           7456.83             3779.12            3677.71               4242.5    0.637372     0.314352
+
+Per-region detail written to: ../results/prod_p100/breakdown_prod_p100.csv
