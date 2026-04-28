@@ -48,3 +48,24 @@ def test_parse_handles_uppercase_in_tag():
     row = df.iloc[0]
     assert row.region == 'comm:all_reduceMax_bsz'
     assert row.cycles == 20
+
+
+EXPECTED_COLS = ['pe_x', 'pe_y', 'region', 'occurrence', 'cycles']
+
+
+def test_parse_handles_end_without_start():
+    df = parse(io.StringIO('@10 PE(0,0): op_end:foo\n'))
+    assert len(df) == 0
+    assert list(df.columns) == EXPECTED_COLS
+
+
+def test_parse_handles_start_without_end():
+    df = parse(io.StringIO('@10 PE(0,0): op_start:foo\n'))
+    assert len(df) == 0
+    assert list(df.columns) == EXPECTED_COLS
+
+
+def test_parse_handles_empty_input():
+    df = parse(io.StringIO(''))
+    assert len(df) == 0
+    assert list(df.columns) == EXPECTED_COLS
