@@ -785,7 +785,7 @@ fn decode_struct() void {
     prt.fmt_with_coords("op_end:ar_qkv\n", .{});
 
     prt.fmt_with_coords("op_start:reconfig_x\n", .{});
-    comm_mod.reconfig_allreduce_axis(0);
+    comm_mod.reconfig_allreduce_axis(0); // 0: px row-wise, 1: py col-wise
     prt.fmt_with_coords("op_end:reconfig_x\n", .{});
 
     prt.fmt_with_coords("op_start:xq_rope\n", .{});
