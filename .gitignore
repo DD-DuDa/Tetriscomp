@@ -12,6 +12,12 @@ test/*/wsjob-*.json
 test/*/run_meta.json
 test/*/sim.log
 
+# Per-config sim outputs are regeneratable; keep only the breakdown CSVs (Task 6)
+# committed as the durable analysis artifacts. Sim.logs grow to multi-MB at P=100.
+test/*/results/**/sim.log
+test/*/results/**/*.log
+!test/*/results/**/breakdown_*.csv
+
 # Simfab traces symlink — developer-local, target path is host-specific
 test/*/simfab_traces
 
