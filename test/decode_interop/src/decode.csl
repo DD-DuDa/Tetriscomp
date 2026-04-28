@@ -26,7 +26,7 @@ const trace = @import_module(
      .buffer_size = 100,
    }
 );
-const simprint = @import_module("<simprint>");
+const prt = @import_module("<simprint>", .{ .enable = true });
 
 // -------------------------------------------------------------------------- //
 // -------------------------------- Task IDs -------------------------------- //
@@ -764,51 +764,109 @@ fn ffn_residual_add() void {
 
 fn decode_struct() void {
 
+    prt.fmt_with_coords("op_start:rmsnorm_x\n", .{});
     rmsnorm_x();
+    prt.fmt_with_coords("op_end:rmsnorm_x\n", .{});
 
+    prt.fmt_with_coords("op_start:xq_matvec_mult\n", .{});
     xq_matvec_mult();
+    prt.fmt_with_coords("op_end:xq_matvec_mult\n", .{});
+
+    prt.fmt_with_coords("op_start:xk_matvec_mult\n", .{});
     xk_matvec_mult();
+    prt.fmt_with_coords("op_end:xk_matvec_mult\n", .{});
+
+    prt.fmt_with_coords("op_start:xv_matvec_mult\n", .{});
     xv_matvec_mult();
+    prt.fmt_with_coords("op_end:xv_matvec_mult\n", .{});
+
+    prt.fmt_with_coords("op_start:ar_qkv\n", .{});
     comm_mod.all_reduce_bsz_dim_QKV_fusion(py, quotient_y, remainder_y, ptr_QKV_tile);
+    prt.fmt_with_coords("op_end:ar_qkv\n", .{});
 
-    comm_mod.reconfig_allreduce_axis(0); // 0: px row-wise, 1: py col-wise
+    prt.fmt_with_coords("op_start:reconfig_x\n", .{});
+    comm_mod.reconfig_allreduce_axis(0);
+    prt.fmt_with_coords("op_end:reconfig_x\n", .{});
 
+    prt.fmt_with_coords("op_start:xq_rope\n", .{});
     xq_rope();
+    prt.fmt_with_coords("op_end:xq_rope\n", .{});
+
+    prt.fmt_with_coords("op_start:xk_rope\n", .{});
     xk_rope();
+    prt.fmt_with_coords("op_end:xk_rope\n", .{});
 
+    prt.fmt_with_coords("op_start:score_matvec_mult\n", .{});
     score_matvec_mult();
+    prt.fmt_with_coords("op_end:score_matvec_mult\n", .{});
 
+    prt.fmt_with_coords("op_start:reconfig_y\n", .{});
     comm_mod.reconfig_allreduce_axis(1);
+    prt.fmt_with_coords("op_end:reconfig_y\n", .{});
 
+    prt.fmt_with_coords("op_start:softmax_score\n", .{});
     softmax_score();
+    prt.fmt_with_coords("op_end:softmax_score\n", .{});
 
+    prt.fmt_with_coords("op_start:output_matvec_mult\n", .{});
     output_matvec_mult();
+    prt.fmt_with_coords("op_end:output_matvec_mult\n", .{});
 
+    prt.fmt_with_coords("op_start:reconfig_x\n", .{});
     comm_mod.reconfig_allreduce_axis(0);
+    prt.fmt_with_coords("op_end:reconfig_x\n", .{});
 
+    prt.fmt_with_coords("op_start:o_matvec_mult\n", .{});
     o_matvec_mult();
+    prt.fmt_with_coords("op_end:o_matvec_mult\n", .{});
 
+    prt.fmt_with_coords("op_start:attn_residual_add\n", .{});
     attn_residual_add();
+    prt.fmt_with_coords("op_end:attn_residual_add\n", .{});
 
+    prt.fmt_with_coords("op_start:reconfig_y\n", .{});
     comm_mod.reconfig_allreduce_axis(1);
+    prt.fmt_with_coords("op_end:reconfig_y\n", .{});
 
+    prt.fmt_with_coords("op_start:rmsnorm_z\n", .{});
     rmsnorm_z();
+    prt.fmt_with_coords("op_end:rmsnorm_z\n", .{});
 
+    prt.fmt_with_coords("op_start:up_matvec_mult\n", .{});
     up_matvec_mult();
+    prt.fmt_with_coords("op_end:up_matvec_mult\n", .{});
+
+    prt.fmt_with_coords("op_start:gate_matvec_mult\n", .{});
     gate_matvec_mult();
+    prt.fmt_with_coords("op_end:gate_matvec_mult\n", .{});
+
+    prt.fmt_with_coords("op_start:ar_zz\n", .{});
     comm_mod.all_reduce_bsz_ffn_dim_ZZ_fusion(py, quotient_y, remainder_y, ptr_ZZ_tile);
+    prt.fmt_with_coords("op_end:ar_zz\n", .{});
 
+    prt.fmt_with_coords("op_start:z2_silu\n", .{});
     z2_silu();
+    prt.fmt_with_coords("op_end:z2_silu\n", .{});
 
+    prt.fmt_with_coords("op_start:z3_mat\n", .{});
     z3_mat();
+    prt.fmt_with_coords("op_end:z3_mat\n", .{});
 
+    prt.fmt_with_coords("op_start:reconfig_x\n", .{});
     comm_mod.reconfig_allreduce_axis(0);
+    prt.fmt_with_coords("op_end:reconfig_x\n", .{});
 
+    prt.fmt_with_coords("op_start:down_matvec_mult\n", .{});
     down_matvec_mult();
+    prt.fmt_with_coords("op_end:down_matvec_mult\n", .{});
 
+    prt.fmt_with_coords("op_start:ffn_residual_add\n", .{});
     ffn_residual_add();
+    prt.fmt_with_coords("op_end:ffn_residual_add\n", .{});
 
+    prt.fmt_with_coords("op_start:reconfig_y\n", .{});
     comm_mod.reconfig_allreduce_axis(1);
+    prt.fmt_with_coords("op_end:reconfig_y\n", .{});
 
     decode_entry();
 }
