@@ -20,7 +20,7 @@ Methodology:
 import sys
 from pathlib import Path
 import pandas as pd
-from parse_simlog import parse
+from parse_simlog import parse, _open
 
 
 # op:reconfig_x and op:reconfig_y wrap pure-comm route-reconfig calls;
@@ -32,8 +32,8 @@ COMM_OP_TAGS = {"op:reconfig_x", "op:reconfig_y"}
 
 
 def breakdown(simlog_path: Path):
-    """Returns (summary_df, per_region_df) for one sim.log."""
-    with open(simlog_path) as f:
+    """Returns (summary_df, per_region_df) for one sim.log (plain or .gz)."""
+    with _open(simlog_path) as f:
         df = parse(f)
 
     # Per-PE total of all op:* regions = e2e per PE (one decode step)
