@@ -1,0 +1,651 @@
+{
+  "root_url": "https://sdk.cerebras.net/",
+  "max_pages": 91,
+  "scraped_pages": 91,
+  "unique_pages": 91,
+  "generated_at": "2026-04-27T10:01:33.361199+00:00",
+  "counts": {
+    "cerebras-sdk-api": 6,
+    "cerebras-sdk-guides": 84,
+    "cerebras-sdk-core": 1
+  },
+  "pages": [
+    {
+      "url": "https://sdk.cerebras.net/api-docs/appliance-api",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-api",
+      "word_count": 1508,
+      "slug": "api-docs__appliance-api"
+    },
+    {
+      "url": "https://sdk.cerebras.net/api-docs/sdklayout-api",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-api",
+      "word_count": 2780,
+      "slug": "api-docs__sdklayout-api"
+    },
+    {
+      "url": "https://sdk.cerebras.net/api-docs/sdkruntime-api",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-api",
+      "word_count": 4497,
+      "slug": "api-docs__sdkruntime-api"
+    },
+    {
+      "url": "https://sdk.cerebras.net/appliance-mode",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1795,
+      "slug": "appliance-mode"
+    },
+    {
+      "url": "https://sdk.cerebras.net/computing-with-cerebras",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 2366,
+      "slug": "computing-with-cerebras"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 255,
+      "slug": "csl__code-examples"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-25-pt-stencil",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 5833,
+      "slug": "csl__code-examples__benchmark-25-pt-stencil"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-7pt-stencil-spmv",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 8853,
+      "slug": "csl__code-examples__benchmark-7pt-stencil-spmv"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-bandwidth-test",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 4534,
+      "slug": "csl__code-examples__benchmark-bandwidth-test"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-bicgstab",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 11813,
+      "slug": "csl__code-examples__benchmark-bicgstab"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-cholesky",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 2177,
+      "slug": "csl__code-examples__benchmark-cholesky"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-conjugate-gradient",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 10693,
+      "slug": "csl__code-examples__benchmark-conjugate-gradient"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-fft-3d",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1430,
+      "slug": "csl__code-examples__benchmark-fft-3d"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-game-of-life",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 2919,
+      "slug": "csl__code-examples__benchmark-game-of-life"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-gemm-collectives",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1555,
+      "slug": "csl__code-examples__benchmark-gemm-collectives"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-gemv-checkerboard",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 2610,
+      "slug": "csl__code-examples__benchmark-gemv-checkerboard"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-gemv-collectives",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1880,
+      "slug": "csl__code-examples__benchmark-gemv-collectives"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-power-method",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 8850,
+      "slug": "csl__code-examples__benchmark-power-method"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-preconditioned-conjugate-gradient",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 11106,
+      "slug": "csl__code-examples__benchmark-preconditioned-conjugate-gradient"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-residual",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 3837,
+      "slug": "csl__code-examples__benchmark-residual"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-row-col-broadcast",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 3451,
+      "slug": "csl__code-examples__benchmark-row-col-broadcast"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/benchmark-single-tile-matvec",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 2201,
+      "slug": "csl__code-examples__benchmark-single-tile-matvec"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-00-basic-syntax",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 438,
+      "slug": "csl__code-examples__tutorial-gemv-00-basic-syntax"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-01-complete-program",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1077,
+      "slug": "csl__code-examples__tutorial-gemv-01-complete-program"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-02-memory-dsds",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 873,
+      "slug": "csl__code-examples__tutorial-gemv-02-memory-dsds"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-03-memcpy",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 654,
+      "slug": "csl__code-examples__tutorial-gemv-03-memcpy"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-04-params",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 749,
+      "slug": "csl__code-examples__tutorial-gemv-04-params"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-05-multiple-pes",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 887,
+      "slug": "csl__code-examples__tutorial-gemv-05-multiple-pes"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-06-routes-1",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1284,
+      "slug": "csl__code-examples__tutorial-gemv-06-routes-1"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-07-routes-2",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1691,
+      "slug": "csl__code-examples__tutorial-gemv-07-routes-2"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-08-routes-3",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 2001,
+      "slug": "csl__code-examples__tutorial-gemv-08-routes-3"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-gemv-09-streaming",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-api",
+      "word_count": 1672,
+      "slug": "csl__code-examples__tutorial-gemv-09-streaming"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-pipeline-01-basic",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 958,
+      "slug": "csl__code-examples__tutorial-pipeline-01-basic"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-pipeline-02-fifo",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 964,
+      "slug": "csl__code-examples__tutorial-pipeline-02-fifo"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-pipeline-03-multiple",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1688,
+      "slug": "csl__code-examples__tutorial-pipeline-03-multiple"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-sdklayout-01-introduction",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 535,
+      "slug": "csl__code-examples__tutorial-sdklayout-01-introduction"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-sdklayout-02-routing",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 732,
+      "slug": "csl__code-examples__tutorial-sdklayout-02-routing"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-sdklayout-03-ports-and-connections",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1005,
+      "slug": "csl__code-examples__tutorial-sdklayout-03-ports-and-connections"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-sdklayout-04-h2d-d2h",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 680,
+      "slug": "csl__code-examples__tutorial-sdklayout-04-h2d-d2h"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-sdklayout-05-gemv",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 3181,
+      "slug": "csl__code-examples__tutorial-sdklayout-05-gemv"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-01-arrays-and-pointers",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 521,
+      "slug": "csl__code-examples__tutorial-topic-01-arrays-and-pointers"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-02-libraries",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 728,
+      "slug": "csl__code-examples__tutorial-topic-02-libraries"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-03-streaming-wavelet-data",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-api",
+      "word_count": 870,
+      "slug": "csl__code-examples__tutorial-topic-03-streaming-wavelet-data"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-04-sparse-tensors",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 826,
+      "slug": "csl__code-examples__tutorial-topic-04-sparse-tensors"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-05-sentinels",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1587,
+      "slug": "csl__code-examples__tutorial-topic-05-sentinels"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-06-switches",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1494,
+      "slug": "csl__code-examples__tutorial-topic-06-switches"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-07-switches-entrypt",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1536,
+      "slug": "csl__code-examples__tutorial-topic-07-switches-entrypt"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-08-filters",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1171,
+      "slug": "csl__code-examples__tutorial-topic-08-filters"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-09-fifos",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1107,
+      "slug": "csl__code-examples__tutorial-topic-09-fifos"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-10-map-builtin",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1070,
+      "slug": "csl__code-examples__tutorial-topic-10-map-builtin"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-11-collectives",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1362,
+      "slug": "csl__code-examples__tutorial-topic-11-collectives"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-12-debug-library",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1581,
+      "slug": "csl__code-examples__tutorial-topic-12-debug-library"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-13-simprint",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1631,
+      "slug": "csl__code-examples__tutorial-topic-13-simprint"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-14-color-swap",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 987,
+      "slug": "csl__code-examples__tutorial-topic-14-color-swap"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-15-wse3-microthreads",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 858,
+      "slug": "csl__code-examples__tutorial-topic-15-wse3-microthreads"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/code-examples/tutorial-topic-16-queue-flush",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 2315,
+      "slug": "csl__code-examples__tutorial-topic-16-queue-flush"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/comptime-struct-migration",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 322,
+      "slug": "csl__comptime-struct-migration"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/csl-compiler",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 271,
+      "slug": "csl__csl-compiler"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/advanced-features",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 488,
+      "slug": "csl__language__advanced-features"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/appendix",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 477,
+      "slug": "csl__language__appendix"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/builtins",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 12536,
+      "slug": "csl__language__builtins"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/builtins_wse3",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1401,
+      "slug": "csl__language__builtins_wse3"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/comptime",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 971,
+      "slug": "csl__language__comptime"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/dsds",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 6443,
+      "slug": "csl__language__dsds"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/dsrs",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 2431,
+      "slug": "csl__language__dsrs"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/generics",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1240,
+      "slug": "csl__language__generics"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/libraries",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 9329,
+      "slug": "csl__language__libraries"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/libraries_wse3",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 775,
+      "slug": "csl__language__libraries_wse3"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/microthreads_wse3",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 516,
+      "slug": "csl__language__microthreads_wse3"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/modules",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 392,
+      "slug": "csl__language__modules"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/storage-classes",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1428,
+      "slug": "csl__language__storage-classes"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/syntax",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 5225,
+      "slug": "csl__language__syntax"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/task-ids",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1004,
+      "slug": "csl__language__task-ids"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language/types",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 5229,
+      "slug": "csl__language__types"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/language_index",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 336,
+      "slug": "csl__language_index"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/tutorials",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 135,
+      "slug": "csl__tutorials"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/tutorials/gemv-00-basic-syntax",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1301,
+      "slug": "csl__tutorials__gemv-00-basic-syntax"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/tutorials/gemv-01-complete-program",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 3083,
+      "slug": "csl__tutorials__gemv-01-complete-program"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/tutorials/gemv-02-memory-dsds",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1309,
+      "slug": "csl__tutorials__gemv-02-memory-dsds"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/tutorials/gemv-03-memcpy",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1283,
+      "slug": "csl__tutorials__gemv-03-memcpy"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/tutorials/gemv-04-params",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 756,
+      "slug": "csl__tutorials__gemv-04-params"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/tutorials/gemv-05-multiple-pes",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1401,
+      "slug": "csl__tutorials__gemv-05-multiple-pes"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/tutorials/gemv-06-routes-1",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 2423,
+      "slug": "csl__tutorials__gemv-06-routes-1"
+    },
+    {
+      "url": "https://sdk.cerebras.net/csl/working-with-code-samples",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 595,
+      "slug": "csl__working-with-code-samples"
+    },
+    {
+      "url": "https://sdk.cerebras.net/debug/debugging",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 3453,
+      "slug": "debug__debugging"
+    },
+    {
+      "url": "https://sdk.cerebras.net/debug/sdk-gui",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 1585,
+      "slug": "debug__sdk-gui"
+    },
+    {
+      "url": "https://sdk.cerebras.net/",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 176,
+      "slug": "index"
+    },
+    {
+      "url": "https://sdk.cerebras.net/installation-guide",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-core",
+      "word_count": 1735,
+      "slug": "installation-guide"
+    },
+    {
+      "url": "https://sdk.cerebras.net/sdk-release-notes/sdk-doc-updates",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 584,
+      "slug": "sdk-release-notes__sdk-doc-updates"
+    },
+    {
+      "url": "https://sdk.cerebras.net/sdk-release-notes/sdk-rel-notes-cumulative",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-guides",
+      "word_count": 8338,
+      "slug": "sdk-release-notes__sdk-rel-notes-cumulative"
+    },
+    {
+      "url": "https://sdk.cerebras.net/tensor-streaming",
+      "title": "SDK Documentation (2.10.0)",
+      "skill": "cerebras-sdk-api",
+      "word_count": 2387,
+      "slug": "tensor-streaming"
+    }
+  ]
+}
